@@ -22,7 +22,7 @@ class SwiperController extends IndexController {
   // this value is PageViewController.pos
   double? pos;
 
-  int index;
+  int? index;
   bool animation;
   bool? autoplay;
 
