@@ -12,9 +12,11 @@ dependencies:
   transformer_page_view:
     git: 
       url: git://github.com/AndrewBotalov80/transformer_page_view.git
+      ref: master
   flutter_page_indicator:
     git:
       url: git://github.com/AndrewBotalov80/flutter_page_indicator.git
+      ref: master
 
 environment:
   sdk: ">=2.12.0-0 <3.0.0"
