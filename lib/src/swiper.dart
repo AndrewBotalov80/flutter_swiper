@@ -398,7 +398,7 @@ class _SwiperState extends _SwiperTimerMixin {
     _activeIndex = widget.index ?? 0;
     if (_isPageViewLayout()) {
       _pageController = new TransformerPageController(
-          initialPage: widget.index!,
+          initialPage: widget.index,
           loop: widget.loop,
           itemCount: widget.itemCount,
           reverse:
