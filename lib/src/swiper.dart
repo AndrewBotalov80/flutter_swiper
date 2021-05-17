@@ -330,7 +330,7 @@ abstract class _SwiperTimerMixin extends State<Swiper> {
       if (oldWidget.controller != null) {
         oldWidget.controller!.removeListener(_onController);
         _controller = oldWidget.controller;
-        _controller!.addListener(_onController);
+        _controller?.addListener(_onController);
       }
     }
     _handleAutoplay();
@@ -340,7 +340,7 @@ abstract class _SwiperTimerMixin extends State<Swiper> {
   @override
   void dispose() {
     if (_controller != null) {
-      _controller!.removeListener(_onController);
+      _controller?.removeListener(_onController);
       //  _controller.dispose();
     }
 
@@ -349,7 +349,7 @@ abstract class _SwiperTimerMixin extends State<Swiper> {
   }
 
   bool _autoplayEnabled() {
-    return _controller!.autoplay ?? widget.autoplay;
+    return _controller?.autoplay ?? widget.autoplay;
   }
 
   void _handleAutoplay() {
@@ -493,16 +493,16 @@ class _SwiperState extends _SwiperTimerMixin {
         pageController: _pageController!,
         loop: widget.loop,
         itemCount: widget.itemCount,
-        itemBuilder: itemBuilder!,
-        transformer: transformer!,
+        itemBuilder: itemBuilder,
+        transformer: transformer,
         viewportFraction: widget.viewportFraction,
-        index: _activeIndex!,
+        index: _activeIndex,
         duration: new Duration(milliseconds: widget.duration),
         scrollDirection: widget.scrollDirection,
         onPageChanged: _onIndexChanged,
         curve: widget.curve,
-        physics: widget.physics!,
-        controller: _controller!,
+        physics: widget.physics,
+        controller: _controller,
       );
       if (widget.autoplayDisableOnInteraction && widget.autoplay) {
         return new NotificationListener(

@@ -59,7 +59,7 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: HEAD
+      ref: master
       resolved-ref: "146f1b79bd1117bd089f4564f089b2f55030629a"
       url: "git://github.com/AndrewBotalov80/flutter_page_indicator.git"
     source: git
@@ -141,8 +141,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: HEAD
-      resolved-ref: ddc46a6eecac671e7292df40a733c930dd16d563
+      ref: master
+      resolved-ref: bd353aa1535645bb514e95c832e5fd95db80e39d
       url: "git://github.com/AndrewBotalov80/transformer_page_view.git"
     source: git
     version: "0.1.6"
